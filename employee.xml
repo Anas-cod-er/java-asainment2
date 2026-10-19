@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employees SYSTEM "employee.dtd">
+
+<!-- Employee records for the assignment. E003 intentionally omits age and gender to use the DTD defaults. -->
+<Employees>
+    <Employee id="E001"
+              age="25"
+              depName="Marketing_Department"
+              salary="6000"
+              gender="male">
+        <Name>Adil Rahman</Name>
+        <Company>ABC Technologies</Company>
+    </Employee>
+
+    <Employee id="E002"
+              age="30"
+              depName="Teaching_Department"
+              salary="7500"
+              gender="female">
+        <Name>Sarah Ahmed</Name>
+        <Company>Global Education Ltd</Company>
+    </Employee>
+
+    <Employee id="E003"
+              depName="Teaching_Management_Department"
+              salary="9000">
+        <Name>Daniel Smith</Name>
+        <Company>Future Learning Group</Company>
+    </Employee>
+</Employees>

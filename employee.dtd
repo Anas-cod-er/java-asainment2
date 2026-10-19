@@ -1,0 +1,15 @@
+<!ELEMENT Employees (Employee+)>
+<!ELEMENT Employee (Name, Company)>
+<!ATTLIST Employee
+    id ID #REQUIRED
+    age CDATA "20"
+    depName (Marketing_Department | Teaching_Department | Teaching_Management_Department) #REQUIRED
+    salary CDATA #IMPLIED
+    gender (male | female) "male"
+>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Company (#PCDATA)>
+
+<!-- Department mapping: Marketing_Department = Marketing Department;
+     Teaching_Department = Teaching Department;
+     Teaching_Management_Department = Teaching Management Department. -->
